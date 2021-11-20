@@ -1,0 +1,55 @@
+.button_container {
+  height: 32px;
+  width: fit-content;
+  background-color: transparent;
+  padding: 4px 12px 4px 6px;
+  display: flex;
+  align-items: center;
+  border: 1px solid grey;
+  cursor: pointer;
+  border-radius: 6px;
+}
+  .button_container.delete {
+    border-color: #C21C44;
+  }
+  .button_container:hover {
+    background-color: lightgray;
+  }
+  .button_container.delete:hover  {
+    background-color: #FFE1E8;
+  }
+  .button_container.fullParentWidth {
+    width: 100%;
+    justify-content: center;
+  }
+
+
+.icon_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .icon_container.forceSvgStyles {
+    margin-right: 7px;
+  }
+  .icon_container.forceSvgStyles.delete svg path{
+    stroke: #C21C44;
+  }
+  .icon_container.forceSvgStyles svg path {
+    color: black;
+    fill: transparent;
+  }
+
+
+.button_text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: black;
+}
+  .button_text.delete {
+    color: #C21C44;
+  }
