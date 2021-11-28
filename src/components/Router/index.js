@@ -7,7 +7,7 @@ const Router = function ({}) {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="dashboard" element={<Dashboard />} />
       </Route>
     </Routes>
   );
